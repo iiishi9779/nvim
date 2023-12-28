@@ -42,15 +42,17 @@ return {
 			  { name = "nvim_lsp" },
 			  { name = "nvim_lua" },
 			  { name = "luasnip" },
-			  { name = "buffer" },
-			  { name = "path" }
-		  }),
+      }, {
+        { name = "buffer" },
+        { name = "path" },
+      })
     })
 
     cmp.setup.cmdline(":", {
 		  mapping = cmp.mapping.preset.cmdline(),
 		  sources = cmp.config.sources({
 			  { name = "path" },
+      }, {
 			  { name = "cmdline" },
 		  }),
 	  })
